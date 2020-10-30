@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<style>
+	body
+	{
+		background-image: url('image/background.jpg');
+	}
+	.lol
+	{
+		margin: 150px;
+		background-color: black;
+	}
+	h2,h3,h4
+	{
+		color:#3480eb;
+
+	}
+
+
+.myButton {
+	box-shadow: 0px 0px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:16px;
+	border:2px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:16px;
+	font-weight:bold;
+	font-style:italic;
+	padding:14px 57px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #154682;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+select {
+    padding:8px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    color:#124d77;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+ul:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.topnav-right {
+  float: right;
+}
+        
+</style>
+</head>
+<body>
+
+<div id="logo">
+	<span id="logo2">
+		FITNESS FIRST
+		<img src="image/logo.png" alt="Paris" style="border-radius: 50%;" width="100" height="100">
+	</span>
+</div>
+<ul>
+	<li><a class="active" href="home.html">HOME	</a></li>
+	<li><a href="exerices.html">EXERICES</a></li>
+	<li><a href="sleep.html">SLEEP MONITOR</a></li>
+	<li><a href="dayplaner.html">FITNESS TRACKER</a></li>
+	<div class="topnav-right">
+  <li><a href="signup.html">SIGNUP</a></li>
+  <li><a href="signin.html">SIGNIN</a></li>
+  </div>
+</ul>
+	<div class="lol">
+<h2>
+Set Your Weekly Goal</h2>
+<h3>We Recommend training at least 3 days a week</h3>
+<h4>Weekly training days</h4>
+<br>
+ <select>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4" selected>4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+</select> 
+<br>
+<h4>First Day of week</h4>
+<br>
+ <select>
+  <option value="1">Monday</option>
+  <option value="2">Tuesday</option>
+  <option value="3">Wednesday</option>
+  <option value="4">Thrusday</option>
+  <option value="5">Friday</option>
+  <option value="6">Saturday</option>
+  <option value="7">Sunday</option>
+</select>
+<br><br>
+	<a href="loading.html" class="myButton">Save</a>
+
+</div>
+</body>
+</html>

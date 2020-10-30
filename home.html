@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+div.gallery {
+  margin: 30px;
+  border: 2px solid #ccc;
+  float: left;
+  width: 300px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}	
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+body{
+background: rgb(236,231,210);
+background: linear-gradient(90deg, rgba(236,231,210,1) 0%, rgba(233,193,225,1) 35%, rgba(238,249,236,1) 100%);
+
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d42640;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+button{
+display:block;
+color: black;
+  text-align: center;
+  padding: 14px 16px;
+  background-color:#d42640;
+  }
+  
+
+li a:hover {
+  background-color: #d95e43;
+}
+#case
+{
+background-color:grey;
+width:100%;
+height:400px;
+}
+#logo{
+background-color:#d42640;
+width:100%;
+height:100px;
+color:white;
+
+font-family: Verdana, Geneva, sans-serif;
+font-size: 27px;
+letter-spacing: 0.2px;
+word-spacing: 2px;
+color: #d42640;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+
+}
+#logo2
+{
+
+background-color:white;
+width:200px;
+height:100px;
+padding:10px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d42640;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.myButton {
+	background-color:#d42640;
+	border-radius:36px;
+	border:3px solid #d42640;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:13px 49px;
+	text-decoration:none;
+	text-shadow:0px 0px 25px #2f6627;
+}
+.myButton:hover {
+	background-color:#d42640;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.topnav-right {
+  float: right;
+}
+</style>
+</head>
+<body>
+<div id="logo">
+
+<span id="logo2">
+FITNESS FIRST
+<img src="image/logo.png" alt="Paris" style="border-radius: 50%;" width="100" height="100">
+
+</span>
+</div>
+<ul>
+  <li><a class="active" href="#home">HOME	</a></li>
+  <li><a href="exerices.html">EXERICES</a></li>
+  <li><a href="sleep.html">SLEEP MONITOR</a></li>
+  <li><a href="dayplaner.html">FITNESS TRACKER</a></li>
+  <div class="topnav-right">
+  <li><a href="signup.html">SIGNUP</a></li>
+  <li><a href="signin.html">SIGNIN</a></li>
+  </div>
+  
+</ul>
+<br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="image/slideshow1.jpg" style="width:100%">
+  <div class="text">Ride To Fitness</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="image/slideshow2.jpg" style="width:100%">
+  <div class="text">Yoga is a light, which once lit will never dim</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="image/slideshow3.jpg" style="width:100%">
+  <div class="text">It is health that is real wealth and not pieces of gold</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<h2> Health Tips</h2>
+<div id="case">
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="image/food.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Good DIET Make Good health</div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="image/drinking.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Pure Water is the World's First and Foremost Medicine</div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="image/sleeping.jpg" alt="Forest" width="650" height="400">
+  </a>
+  <div class="desc">You know you're in love when you can't fall asleep .</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+</div>
+<center>
+<h1> OUR HEALTH CLUB</h1>
+<h4>Push your fitness further with our mix of facilities and we'll support you with advice on new and better ways to train.</h4>
+<div id="club">
+		<a href="https://www.fitnessfirst.net.in/clubs/" class="myButton">FIND A CLUB</a>
+</div>
+<br><br><br>
+<img src="image/club1.jpg" width="1001px" height="550px">
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 

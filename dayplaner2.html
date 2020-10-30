@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+
+
+
+<script>
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+ function start() {
+    var fiveMinutes = 60 * 5,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+    startTimer1();
+};
+
+function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+			  y = (y === text.length - 1) ? 0 : y + 1;
+              document.getElementById("img").src = images[x];
+			                document.getElementById("demo").innerHTML = text[y];
+
+          }
+
+          
+
+          function startTimer1() {
+              setInterval(displayNextImage, 1000000000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "image/pushup.gif";
+		  images[1] = "image/relax.gif";
+
+		  
+          images[2] = "image/healtouch.gif";
+		            images[3] = "image/relax.gif";
+
+          images[4] = "image/2.gif";
+		            images[5] = "image/relax.gif";
+
+		  images[6] = "image/pullups.gif";
+		  		            images[7] = "image/relax.gif";
+
+		  images[8] = "image/3.gif";
+
+		  
+		  var text = [],y = -1;
+		  text[0]=" TAKE 10 Pushup";
+		  text[1]="RELAX";
+		  text[2]=" TAKE 15 healtouch";
+		  		  text[3]="RELAX";
+
+		  text[4]=" TAKE 20 Jumping pack";
+		  		  text[5]="RELAX";
+
+		  text[6]=" TAKE 15 pullup";
+		  
+
+
+</script>
+<style>
+button {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:20px;
+	border:2px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:19px;
+	font-weight:bold;
+	padding:12px 48px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+button:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+ul:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+
+#time{
+font-family: Georgia, serif;
+font-size: 27px;
+letter-spacing: -0.6px;
+word-spacing: 3.4px;
+color: #FF2469;
+font-weight: 400;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: italic;
+font-variant: small-caps;
+text-transform: capitalize;
+}
+#demo {
+font-family: Verdana, Geneva, sans-serif;
+font-size: 20px;
+letter-spacing: 0px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 400;
+text-decoration: none;
+font-style: italic;
+font-variant: small-caps;
+text-transform: uppercase;
+}
+.topnav-right {
+  float: right;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+
+<div id="logo">
+	<span id="logo2">
+		FITNESS FIRST
+		<img src="image/logo.png" alt="Paris" style="border-radius: 50%;" width="100" height="100">
+	</span>
+</div>
+<ul>
+	<li><a class="active" href="home.html">HOME	</a></li>
+	<li><a href="exerices.html">EXERICES</a></li>
+	<li><a href="sleep.html">SLEEP MONITOR</a></li>
+	<li><a href="dayplaner.html">FITNESS TRACKER</a></li>
+	<div class="topnav-right">
+  <li><a href="signup.html">SIGNUP</a></li>
+  <li><a href="signin.html">SIGNIN</a></li>
+  </div>
+</ul>
+<center><h1>TIMER</h1>
+<button onclick="start()">Start timer</button>
+    <div> <span id="time">05:00</span> </div>
+    
+    <img id="img" width="250px" height="200px" src="image/1.gif"/>
+	<p id="demo">GET READY </p>
+	</center>
+      
+</body>
+</html>
